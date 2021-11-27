@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+:root {
+    /* Fonts */
+    --font-title: 'Comforter Brush', cursive;
+    --color-bg: whitesmoke;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-title);
+    font-size: 100%;
+    background-color: var(--color-bg);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Title */
+
+.title {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+/* Loader */
+
+.loader {
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image container */
+.image-container {
+    margin: 1rem 5%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 38rem) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .image-container {
+        margin: 1rem 15%;
+    }
+}
+
+@media (min-width: 64rem) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .image-container {
+        margin: 1rem 30%;
+    }
+}
